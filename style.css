@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.kaushan-script {
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+}
+
+.colored-text {
+    color: #F5731D;
+}
+
+.left-line, .right-line {
+    position: absolute;
+    width: 0.75rem;
+    height: 100vh;
+    background-color: #F5731D;
+}
+
+.left-line {
+    left: 2rem;
+}
+
+.right-line {
+    right: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 12rem;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.symbol {
+    position: absolute;
+    top: 5rem;
+    right: 10rem;
+    height: 3rem;
+}
+
+@media (max-width: 1110px) {
+    html {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 0 6rem;
+    }
+
+    .symbol {
+        right: 7rem;
+    }
+}
+
+@media (max-width: 690px) {
+    html {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 0 3rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .symbol {
+        top: auto;
+        bottom: 5rem;
+        left: 3rem;
+    }
+
+    .left-line, .right-line {
+        display: none;
+    }
+
+    .top-line, .bottom-line {
+        position: absolute;
+        height: 0.5rem;
+        left: 0;
+        right: 0;
+        background-color: #F5731D;
+    }
+
+    .top-line {
+        top: 2rem;
+    }
+
+    .bottom-line {
+        bottom: 2rem;
+    }
+}
+
+@media (max-width: 330px) {
+    html {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+}
